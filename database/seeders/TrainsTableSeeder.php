@@ -14,15 +14,13 @@ class TrainsTableSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        $currentDate = now();
-
         for ($i = 0; $i < 50; $i++) {
             $treno = new Train(); // Creo una nuova istanza di train()
 
             $treno->azienda = $faker->word();
             $treno->stazione_di_partenza = $faker->sentence(3);
             $treno->stazione_di_arrivo = $faker->sentence(3);
-            $treno->data_di_partenza = $faker->dateTimeBetween($currentDate, "+1 month")->format('Y-m-d');
+            $treno->data_di_partenza = $faker->dateTimeBetween("-1 month", "+1 month")->format('Y-m-d');
             $treno->orario_di_partenza = $faker->time('H:i');
 
             $addMinutes = $faker->numberBetween(1, 60); // Genero dei numeri casuali
