@@ -1,5 +1,5 @@
 @extends("layouts.public")
 
 @section("content")
-    <h1>Hello world</h1>
+    <h1>Laravel - Migration-Seeder</h1>
 @endsection
