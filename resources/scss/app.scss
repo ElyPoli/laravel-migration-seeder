@@ -1,2 +1,25 @@
 @use "bootstrap";
 @use "@fortawesome/fontawesome-free/css/all.min.css";
+
+.custom-width {
+    width: calc(100% / 9);
+}
+
+.main-home {
+    background-color: #004225;
+}
+
+.my-table {
+    --bs-table-bg-type: #D0E7D2;
+    --bs-table-color: #004225;
+    --bs-table-bg: #D0E7D2;
+    --bs-table-border-color: #c6c7c8;
+    --bs-table-striped-bg: #f3f8f3;
+    --bs-table-striped-color: #004225;
+    --bs-table-active-bg: #f3f8f3;
+    --bs-table-active-color: #004225;
+    --bs-table-hover-bg: #f3f8f3;
+    --bs-table-hover-color: #004225;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
